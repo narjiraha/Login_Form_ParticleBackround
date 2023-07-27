@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&family=Roboto+Mono&display=swap');
+html,
+body {
+ 
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set background color and font */
+  body {
+    background-color: #0f0f10;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Style the sketch container */
+  #sketch-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  /* Style the registration form container */
+  #registration-form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    max-width: 500px;
+  }
+  
+  /* Style the registration form title */
+  #registration-form-container h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Style the registration form labels */
+  #registration-form-container label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+/* Style the registration form inputs */
+#registration-form-container input {
+    background: linear-gradient(to bottom, #4c4c4c, #333);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    transition: all 0.2s ease;
+  }
+  
+  /* Style the registration form input placeholder */
+  #registration-form-container input::placeholder {
+    color: #999;
+  }
+  
+  /* Style the registration form input on focus */
+  #registration-form-container input:focus {
+    outline: none;
+    border: 1px solid #6e5cf6;
+    box-shadow: 0 0 10px rgba(110, 92, 246, 0.5);
+  }
+  
+  
+  /* Style the registration form button */
+  #registration-form-container button[type="submit"] {
+    background-color: #6e5cf6;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* Change button background color on hover */
+  #registration-form-container button[type="submit"]:hover {
+    background-color: #8f7bf8;
+  }
+  
